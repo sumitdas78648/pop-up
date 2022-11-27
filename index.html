@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie-edge">
+    <title>Fullscreen popup with Flexbox</title>
+</head>
+
+<body>
+    <h1>Fullscreen popup with Flexbox</h1>
+
+    <h3>Click below to see my pop up!!</h3>
+    <button onclick="togglePopup()">Show Popup!</button>
+
+    <div class="full-screen hidden flex-container-center">
+        <h3>Click below to close this pop up!</h3>
+        <button onclick="togglePopup()>Close popup!</button>
+    </div>
+    <script src="app.js"></script>
+    <script>
+        document.addEventlistenter("dblclick", ()) => {
+            document.documentElement.requestFullscreen().catch((e)) => {
+                console.log(e);
+            };
+        };
+    </script>
+</body>
+</html>
